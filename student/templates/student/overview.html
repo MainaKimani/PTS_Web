@@ -1,0 +1,61 @@
+{% extends 'student/main.html' %}
+
+{% block content %}
+
+<div class="table_container">
+    <div class="table_header">Current Project</div>
+    <div class="table">
+        <div class="project_table hidden">
+            <table>
+                <thead>
+                  <tr>
+                    <th> Project </th>
+                    <th> Level </th>
+                    <th> Start Date </th>
+                    <th> Expected Duration </th>
+                  </tr>
+                </thead>
+                <tbody class="project_data">
+                    <tr>
+                        <td>Music Player</td>
+                        <td>Beginner</td>
+                        <td>10-Oct-2022</td>
+                        <td>5 weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="table_header">Completed Projects</div>
+    <div class="table">
+        <div class="project_table hidden">
+            <table>
+                <thead>
+                  <tr>
+                    <th> Project </th>
+                    <th> Level </th>
+                    <th> Start Date </th>
+                    <th> Expected Duration </th>
+                  </tr>
+                </thead>
+                <tbody class="project_data">
+                    <tr>
+                        <td>Online Resume</td>
+                        <td>Intermediate</td>
+                        <td>10-Aug-2022</td>
+                        <td>2 weeks</td>
+                    </tr>
+                    <tr>
+                        <td>Ecommerce</td>
+                        <td>Intermediate</td>
+                        <td>3-Sep-2022</td>
+                        <td>4 weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+    </head>
+    <body>
+
+        <!-- -------------- Left column  ---------------- -->
+        <div class="left_column">
+            <div class="menu_container">
+                <div class="menu">
+                    <div class="logo_holder">
+                        <a class="logo" href=""> PTS </a>
+                    </div>
+                    <div class="menu_list">
+                        <a href=""> <i class="uil uil-create-dashboard i_menu"></i> Overview</a>
+                    </div>
+                    <div class="menu_list">
+                        <a href=""><i class="uil uil-clipboard-notes i_menu"></i> Projects</a>
+                    </div>
+                    <div class="menu_list">
+                        <a href=""><i class="uil uil-users-alt i_menu" style="margin-right: 0.8rem"></i>Cohort</a>
+                    </div>
+                </div>
+                <div class="menu_settings">
+                    <div class="menu_list">
+                        <a href=""> <i class="uil uil-setting i_menu"></i> Settings</a>
+                    </div>
+                    <div class="menu_list back">
+                        <a href=""> <i class="uil uil-left-arrow-from-left i_menu"></i> Back Home</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- -------------- Righ column bar ---------------- -->
+        <div class="right_column">
+            <div class="right_column_content">
+
+                <!-- top bar -->
+                <div class="top_bar">
+                    <div class="salutation">Good Afternoon, Alex</div>
+                    <div class="logout">
+                        Log Out <i class="uil uil-sign-out-alt"></i>
+                    </div>
+                </div>
+
+                <!-- content section -->
+                <div class="content_container">
+                    <div class="content">
+                        {% block content %}
+
+                        {% endblock  %}
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer"> 
+                        <div class="footer_content">
+                            <div class="title">SEPA PTS Portal @ <em>2022</em></div> 
+                            <div class="dev"> 
+                                Developed  by <a href="https://mainakimani.com">Maina Kimani</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
