@@ -2,8 +2,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def home(request): 
-    return HttpResponse ('Home')
+def overview(request): 
+    return render (request,'student/overview.html')
 
 def projects(request):
-    return HttpResponse ('Projects')
+    return render (request,'student/projects.html')
+
+def cohort(request):
+    return render (request,'student/cohort.html')
