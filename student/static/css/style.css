@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+/*
+blue - #037be4
+white - #F7F8FC
+black - #20252a
+font-black - #454545
+font-white - #ccc
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F7F8FC;
+    line-height: 1.5;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #454545;
+    display: flex;
+    justify-content: start;
+}
+a{
+    text-decoration: none !important;
+}
+
+/****************************** Left Content Section *********************************/
+.left_column{
+    min-width:12rem;
+}
+.menu_container{
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    width:12rem;
+    height: 100%;
+    padding-top: 2rem;
+    text-align: center;
+    color: #fcfcfc;
+    background-color: #20252a;
+    overflow-x: hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between; 
+}
+.logo_holder{
+    margin-bottom: 2rem;
+}
+.logo{
+    color:#037be4;
+    font-size:x-large;
+    font-weight: 500;
+}
+.logo:hover{
+    color:#d1f4f4;
+}
+.menu_list{
+    padding: 0 0 0 1.5rem;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2;
+}
+.menu .menu_list{
+    padding: 1rem 0 1rem 1.5rem;
+    border-bottom:solid 1px #333;
+    border-left:solid 5px #333;
+}
+.menu_list a{
+    color: #ccc;
+}
+.menu_list .i_menu{
+    font-size: 1.1rem;
+    margin-right: .5rem;
+}
+.menu_settings{
+    margin-bottom: 2rem;
+}
+.menu_settings .back{
+    padding: 0 0 1.5rem 2rem;
+}
+.menu_settings .back a{
+    opacity: 0.7;
+    color: #037be4;
+    font-size: small;
+}
+.menu_settings .back a:hover{
+    opacity: 1;
+}
+.back .i_menu{
+    font-size: small;
+}
+
+
+/****************************** Right Content Section *********************************/
+.right_column{
+    width: 100%;
+    min-height: 92vh;
+}
+.right_column_content{
+    position: relative;
+    height: 100%;
+}
+/**** top_bar *****/
+.top_bar{
+    width: 90%;
+    margin:auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.salutation{
+    font-size:large;
+    font-weight: 600;
+}
+.logout{
+    font-size: small;
+    font-weight: 600;
+    color: #037be4;
+    border:#037be4 solid 1.5px;
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+
+
+/**** Content Container *****/
+.content_container{
+    width: 90%;
+    margin-bottom: 5rem;
+    margin: auto;
+}
+
+/**** footer *****/
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    padding-bottom: 1rem;
+    font-size: small;
+}
+.footer_content{
+    border-top: solid 0.2px rgba(32, 37, 42, 0.4);
+    padding-top: 1.5rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+.dev a{
+    color:#037be4;
+    font-weight: 500;
+}
+
+
+
+
+
+/*------Overview Page -------*/
+/*---- table ----*/
+.table_container{
+    margin-top: 2rem;
+    margin-bottom: 1rem
+}
+.table_header{
+    font-weight: 500;
+    margin: 1rem;
+}
+.project_table{
+    margin: 1rem  1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 10px -5px;
+}
+
+table { 
+	border-collapse: collapse;
+	margin: auto;
+    width: 100%;
+    background: #F7F8FC;
+    border-radius: 0.5rem;
+    padding-left: 0.75rem;
+}
+th { 
+    background: #fdfdfe;
+	color:#242424; 
+	font-weight:600;
+}
+th:first-child{
+    border-top-left-radius: 0.5rem; 
+}
+th:last-child{
+    border-top-right-radius: 0.5rem;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #e7e8ec; 
+}
+tr:last-child{ 
+	border-bottom-left-radius: 0.5rem; 
+    border-bottom-right-radius: 0.5rem; 
+}
+
+td, th { 
+	padding: 0.75rem; 
+	text-align: left; 
+	font-size: 0.75rem;
+}
+td{
+    font-weight: 500;
+}
