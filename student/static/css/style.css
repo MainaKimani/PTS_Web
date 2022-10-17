@@ -164,7 +164,7 @@ a{
 /*---- table ----*/
 .table_container{
     margin-top: 2rem;
-    margin-bottom: 1rem
+    margin-bottom: 5rem;
 }
 .table_header{
     font-weight: 500;
@@ -172,6 +172,7 @@ a{
 }
 .project_table{
     margin: 1rem  1rem;
+    margin-bottom: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0px 1px 10px -5px;
 }
